@@ -11,7 +11,7 @@ function App() {
       </h1>
       <dl className="dictionary">
         {
-          emojipedia.map(item => <Entry name={item.name} emoji={item.emoji} meaning={item.meaning} />)
+          emojipedia.map(item => <Entry key={item.id} name={item.name} emoji={item.emoji} meaning={item.meaning} />)
         }
       </dl>
     </div>
